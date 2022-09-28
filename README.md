@@ -18,7 +18,7 @@
   >    Run 'node server.js' to run program <br>
   
   To view database from MYSQL. <br>
-  >    run mysql -u root -p <br>
+  >    Run mysql -u root -p <br>
 
   ## Usage:
   This application will allow user to view, edit and delete employees, roles and department tables. <br>
