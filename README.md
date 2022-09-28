@@ -13,7 +13,7 @@
     
   ## Installation:
   To clone the repo: <br>
-  >    git clone git@github.com:VaishaliQA/Note_Taker.git <br>
+  >    git clone git@github.com:VaishaliQA/Employee_Tracker.git <br>
   >    Run 'npm install' to install dependencies <br>
   >    Run 'node server.js' to run program <br>
   
