@@ -16,12 +16,18 @@
   >    git clone git@github.com:VaishaliQA/Note_Taker.git <br>
   >    Run 'npm install' to install dependencies <br>
   >    Run 'node server.js' to run program <br>
+  
   To view database from MYSQL. <br>
   >    run mysql -u root -p <br>
 
   ## Usage:
-  This application will allow user to view, edit and delete employees, roles and department tables.
-  Here, walk through video of complete application. 
+  This application will allow user to view, edit and delete employees, roles and department tables. <br>
+  Here, walk through video of complete application. <br>
+  
+
+https://user-images.githubusercontent.com/54869821/192665052-89b0def6-12b0-429a-804a-e21b1fe5002c.mp4
+
+
 
   ## Test:
   There are no test for this application.
