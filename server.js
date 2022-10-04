@@ -10,6 +10,7 @@ const {
   editEmployee,
   editEmployeebyManager,
   removeEmployee,
+  showEmployeebyManager
 } = require("./helpers/employee");
 
 const {
@@ -51,6 +52,11 @@ showEmployees = () => {
 employeeDepartment = () => {
   console.log("Showing employee by departments...\n");
   showEmployeebyDepartment();
+};
+// function to view employee manager
+employeeManager = () => {
+  console.log("Showing employee by departments...\n");
+  showEmployeebyManager();
 };
 
 // function to add an employee

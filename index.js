@@ -12,6 +12,7 @@ const promptUser = () => {
         choices: [
           "View all employees",
           "View employees by department",
+          "View employees by manager",
           "Add an employee",
           "Update an employee role",
           "Update an employee manager",
@@ -35,6 +36,9 @@ const promptUser = () => {
       }
       if (choices === "View employees by department") {
         employeeDepartment();
+      }
+      if (choices === "View employees by manager") {
+        employeeManager();
       }
       if (choices === "Add an employee") {
         addEmployee();

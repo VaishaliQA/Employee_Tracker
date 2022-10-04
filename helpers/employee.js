@@ -31,7 +31,7 @@ function showAllEmployess() {
 function showEmployeebyDepartment() {
   const sql = `SELECT employee.first_name AS firstname, employee.last_name AS lastname, department.name AS department
                  FROM employee LEFT JOIN role ON employee.role_id = role.id 
-                 LEFT JOIN department ON role.department_id = department.id`;
+                 LEFT JOIN department ON role.department_id = department.id ORDER BY department`;
 
   connection.query(sql, (err, results) => {
     if (err) throw err;
@@ -39,6 +39,22 @@ function showEmployeebyDepartment() {
     console.table(results);
     promptUser();
   });
+}
+
+function showEmployeebyManager()
+{
+  const sql = `SELECT employee.first_name AS firstname, employee.last_name AS lastname,
+  role.title AS role, department.name AS department, role.salary AS salary, 
+  CONCAT_WS(' ', employee.first_name, employee.last_name) AS manager
+  FROM employee 
+  LEFT JOIN role ON employee.role_id = role.id 
+  LEFT JOIN department ON role.department_id = department.id ORDER BY manager`;
+connection.query(sql, (err, results) => {
+if (err) throw err;
+console.log("\n");
+console.table(results);
+promptUser();
+});
 }
 
 // function to add an employee
@@ -317,4 +333,5 @@ module.exports = {
   editEmployee,
   editEmployeebyManager,
   removeEmployee,
+  showEmployeebyManager
 };
