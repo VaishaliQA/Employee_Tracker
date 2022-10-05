@@ -55,7 +55,7 @@ employeeDepartment = () => {
 };
 // function to view employee manager
 employeeManager = () => {
-  console.log("Showing employee by departments...\n");
+  console.log("Showing employee by MAnager...\n");
   showEmployeebyManager();
 };
 

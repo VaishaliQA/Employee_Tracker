@@ -11,8 +11,8 @@ const promptUser = () => {
         message: "What would you like to do?",
         choices: [
           "View all employees",
-          "View employees by department",
           "View employees by manager",
+          "View employees by department",
           "Add an employee",
           "Update an employee role",
           "Update an employee manager",
